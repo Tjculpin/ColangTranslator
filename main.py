@@ -170,15 +170,16 @@ if __name__ == "__main__":
         sys.exit(1)
     
     print(f"\nWelcome to the {selected_language} Translator!")
-    print("Enter text to translate (or type 'exit' to quit):")
+    print("Enter text to translate (or type 'exit_' to quit):")
     
     while True:
         user_input = input("> ")
-        if user_input.lower() == "exit":
-            print(f"Goodbye! (Vekhterüszt in {selected_language}!)")
+        if user_input.lower() == "exit_":
+            print(f"Goodbye!")
             break
         if user_input.strip() == "":
             print("Please enter some text to translate.")
             continue
         translated_text = translate_to_conlang(user_input, translation_dict)
+
         print(f"Translated: {translated_text}\n")
