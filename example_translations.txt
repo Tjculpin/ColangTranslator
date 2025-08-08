@@ -1,4 +1,6 @@
 translation_dict = {
     "what_you_want_your_colang_to_get_translated_from": "colang",
-
+   "hi": "output",
+"Hello": "Hola",
 }
+
